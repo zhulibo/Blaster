@@ -125,7 +125,6 @@ void AWeapon::Fire(const FVector& HitTarget)
 		if (AmmoEjectSocket)
 		{
 			FTransform SocketTransform = AmmoEjectSocket->GetSocketTransform(WeaponMesh);
-
 			UWorld* World = GetWorld();
 			if (World)
 			{

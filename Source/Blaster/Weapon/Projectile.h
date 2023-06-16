@@ -43,4 +43,7 @@ private:
 
 	UPROPERTY(EditAnywhere)
 	class USoundCue* ImpactSound;
+
+	UFUNCTION(NetMulticast, Reliable)
+	void Multicast_OnHit();
 };
